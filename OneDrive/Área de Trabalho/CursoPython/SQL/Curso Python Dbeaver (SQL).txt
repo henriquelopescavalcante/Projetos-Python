@@ -1,0 +1,15 @@
+Curso Python Dbeaver (SQL)
+
+INSERT (inserir dados)
+SELECT (realizar consultas)
+UPDATE (atualizar dados)
+DELETE (remover dados)
+
+
+and ou or = se quiser fazer uma pesquisa com mais de uma combinação
+
+order by = ordenar
+desc = decrecente 
+asc = acendente 
+set = quais campos 
+from =de 

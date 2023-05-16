@@ -1,0 +1,17 @@
+import socket
+
+HOST = " 201.92.162.212"
+PORT = 9000
+print("iniciando o socket")
+s = socket.socket()
+print("conectando com o servidor")
+s.connect((HOST, PORT))
+numero1 = input("digite um numero: ")
+numero2 = input("digite um numero: ")
+texto = f"{numero1}x{numero2}"
+print(f"enviando o texto: {texto}")
+s.sendall(texto.encode("utf-8"))   
+dados = s.recv(1024)
+s.close()
+texto = dados.dacode("utf-8")
+print(f"cliente recebi {texto}")

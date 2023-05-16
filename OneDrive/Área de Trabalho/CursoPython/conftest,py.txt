@@ -1,0 +1,7 @@
+import pytest
+
+from wallet import wallet
+
+@pytest.fixture
+def carteira():
+    return wallet(10)
